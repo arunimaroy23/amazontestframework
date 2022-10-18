@@ -10,7 +10,7 @@ public class RetryAnalyser implements IRetryAnalyzer {
     public boolean retry(ITestResult iTestResult) {
         while(count<retryCount)
         {
-            retryCount++;
+            count++;
             return true;
         }
         return false;
